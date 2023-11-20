@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- font awsome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- poppins font  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Agdasima&family=Inter:wght@400;700;800&family=Poppins&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WonderMart</title>
+  <script type="module" crossorigin src="/assets/index-6c988136.js"></script>
+  <link rel="stylesheet" href="/assets/index-728162f8.css">
+</head>
+
+<body class="w-screen m-0 overflow-x-hidden text-[#1e293b] font-[poppins]">
+
+  <nav
+    class="sticky top-0 z-20 flex items-center justify-between w-full h-16 px-3 font-semibold bg-white shadow-lg sm:h-24 sm:justify-between sm:px-6 md:justify-around md:px-7 navigation backdrop-blur-lg">
+
+
+    <ul class="hidden gap-4 text-xs md:text-lg md:gap-8 md:flex">
+      <a href="#"><li class="inline">Home</li></a>
+      <a href=""><li class="inline">Pages</li></a>
+    </ul>
+
+    <!-- contains ham and logo  -->
+    <div class="flex">
+      <button class="md:hidden" id="hambtn"><i class="fa-solid fa-bars sm:text-xl"></i></button>
+      <a href="#"><img src="/logo3.png" alt="wondermart logo" class="h-12 w-28 sm sm:w-40 sm:h-16 md:h-20 md:w-48 "></a>
+    </div>
+
+    <ul class="flex items-center gap-4 text-xs sm:text-base sm:gap-5 md:gap-8">
+
+      <li><button class="flex items-center justify-center w-6 h-6 p-2 border border-black rounded-full light_darkbtn"><i
+            class="fa-solid fa-moon theme"></i></button></li>
+
+      <a href="#"><li class="flex items-center gap-2"><i class="fa-solid fa-user"></i><span class="hidden mob:inline">Login</span>
+      </li></a>
+
+      <a href="#"><li class="flex items-center gap-2"><i class="fa-solid fa-magnifying-glass"></i><span
+          class="hidden mob:inline">Search</span></li></a>
+
+      <a href="#"><li class="flex items-center gap-2"><i class="fa-solid fa-cart-shopping"></i><span
+          class="hidden mob:inline">Cart</span></li></a>
+    </ul>
+
+  </nav>
+
+  <!-- mobile navigation  -->
+  <ul
+    class="sticky z-20 flex flex-col items-start justify-center hidden w-full gap-1 px-6 py-4 text-xs text-left bg-white shadow-lg top-14 sm:top-24 ham-menu sm:text-sm mob:px-3">
+    <a href="/index.html"><li>Home</li></a>
+    <a href="#"><li>Services</li></a>
+    <a href="#"><li>Contact Us</li></a>
+    <a href="#"><li>Top Trending</li></a>
+    <a href="#"><li>FAQs</li></a>
+  </ul>
+  <!-- navigation ends here  -->
+
+  <div id="topimage" class="h-[30vh] sm:h-[50vh] md:h-[80vh] bg-contain lg:bg-cover"></div>
+
+  <!--------------------------------- mid container starts here ---------------------------------- -->
+
+  <section class="w-full h-[30vh] sm:h-[40vh] md:h-[50vh] flex items-center justify-center">
+
+    <!-- container that contains arrows and scroll items  -->
+
+    <div class="h-[90%] w-full relative flex items-center justify-center">
+
+      <button id="leftitemscroll"
+        class="absolute top-[50%] left-1 translate-y-[-50%]  rounded-full  flex items-center justify-center h-6 w-6 text-center z-10 bg-orange-400"><i
+          class="fa-solid fa-arrow-left"></i></button>
+
+      <button id="rightitemscroll"
+        class="absolute top-[50%] right-1 translate-y-[-50%] z-10 h-6 w-6 rounded-full  bg-orange-400"><i
+          class="fa-solid fa-arrow-right"></i></button>
+
+
+      <!-- slider part  -->
+      <div
+        class="h-[90%] w-[90%] flex items-center justify-between uppercase  gap-2 md:w-[95%] overflow-x-scroll p-1 sm:gap-4 font-[poppins]"
+        id="itemslider">
+
+        <!-- item1  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl  categoryitem">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-lightbulb md:text-6xl"></i>
+            <h2 class="font-bold">Lighting</h2>
+          </div>
+        </div>
+
+        <!-- item2  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl  categoryitem">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-building-user md:text-6xl"></i>
+            <h2 class="font-bold">Office</h2>
+
+          </div>
+        </div>
+
+        <!-- item3  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl categoryitem ">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-couch md:text-6xl"></i>
+            <h2 class="font-bold">Interior</h2>
+
+          </div>
+        </div>
+
+        <!-- item4  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl categoryitem ">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-utensils md:text-6xl"></i>
+            <h2 class="font-bold">Kitchen</h2>
+
+          </div>
+        </div>
+
+        <!-- item5  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl categoryitem ">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-bath md:text-6xl"></i>
+            <h2 class="font-bold">Bathroom</h2>
+
+          </div>
+        </div>
+
+        <!-- item6  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%]  px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl categoryitem ">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48">
+            <i class="text-3xl fa-solid fa-bed md:text-6xl"></i>
+            <h2 class="font-bold">Bedroom</h2>
+
+          </div>
+        </div>
+
+        <!-- item7  -->
+        <div
+          class="flex flex-col items-center justify-around h-[95%] px-2 bg-light rounded-md  hover:cursor-pointer hover:text-orange-400 hover:shadow-2xl categoryitem">
+          <div class="flex flex-col items-center justify-around w-32 h-20 sm:w-40 md:h-40 md:w-48 ">
+            <i class="text-3xl fa-solid fa-users-rectangle md:text-6xl"></i>
+            <h2 class="font-bold">Living Room</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!------------------------------ new arrival part starts here  ------------------------------>
+  <section class="flex flex-col items-center justify-center w-full h-auto gap-3 px-3 py-8">
+
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold uppercase font-[poppins] text-orange-400">new arrival</h2>
+
+    <p class="text-sm text-center uppercase balance mob:text-base sm:text-lg w-[80%]">shop the new selection
+      of new arrivals at our store. fill out your wishlist items.
+    </p>
+
+    <!-- outside container  -->
+    <div class=" h-[70%] w-full relative flex items-center justify-center">
+
+      <button id="leftnewitemscroll"
+        class="absolute top-[50%] left-1 translate-y-[-50%]  rounded-full  flex items-center justify-center h-6 w-6 text-center z-10 bg-orange-400"><i
+          class="fa-solid fa-arrow-left"></i></button>
+
+      <button id="rightnewitemscroll"
+        class="absolute top-[50%] right-1 translate-y-[-50%] z-10 h-6 w-6 rounded-full bg-orange-400"><i
+          class="fa-solid fa-arrow-right"></i></button>
+
+      <!-- inner container   -->
+      <div class="w-full h-[100%] overflow-x-scroll flex items-center justify-start gap-8 font-[poppins] px-6 py-4"
+        id="newitemcontainer">
+
+        <!-- item1 -->
+        <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+          <div class="gap-2 flex flex-col items-center justify-center h-[330px] w-52 sm:w-60 md:w-72">
+            <img src="/bed2.png" alt="new item1" class="h-[75%] w-[90%]">
+            <h4 class="text-base font-semibold uppercase">Alcatra porkchop</h4>
+            <h3 class="font-semibold text-orange-400">$50.00 <span
+                class="text-xs line-through text-slate-800">$66.00</span></h3>
+          </div>
+        </div>
+
+        <!-- item2 -->
+        <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+          <div class="gap-2 flex flex-col items-center justify-center h-[330px] w-52 sm:w-60 md:w-72">
+            <img src="/lamp.png" alt="new item1" class="h-[75%]">
+            <h4 class="text-base font-semibold uppercase">Aenean eleif</h4>
+            <h3 class="font-semibold text-orange-400">$54.00</h3>
+          </div>
+        </div>
+
+        <!-- item3 -->
+        <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+          <div class="gap-2 flex flex-col items-center justify-center h-[330px] w-52 sm:w-60 md:w-72">
+            <img src="/chair1.png" alt="new item1" class="h-[75%]">
+            <h4 class="text-base font-semibold uppercase">Alcatra porkchop</h4>
+            <h3 class="font-semibold text-orange-400">$50.00 <span
+                class="text-xs line-through text-slate-800">$66.00</span></h3>
+          </div>
+        </div>
+
+        <!-- item4 -->
+        <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+          <div class="gap-2 flex flex-col items-center justify-center h-[330px] w-52 sm:w-60 md:w-72">
+            <img src="/table1.png" alt="new item1" class="h-[75%]">
+            <h4 class="text-base font-semibold uppercase">sofa Item1</h4>
+            <h3 class="font-semibold text-orange-400">$50.00</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---------------- top popular section starts here  ----------------->
+
+  <section class="flex flex-col items-center justify-center w-full h-auto gap-5 px-3 py-8">
+
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold uppercase font-[poppins] text-orange-400">Top popular</h2>
+
+    <p class="text-sm text-center uppercase balance mob:text-base sm:text-lg w-[80%]">check out the most popular stuff
+      of our store. fill out your wishlist items.
+    </p>
+
+    <div class="flex flex-col items-center gap-6 px-4 overflow-hidden justify-evenly sm:flex-row">
+
+      <!-- popular item 1 -->
+      <div
+        class="w-[90%] h-[350px] sm:w-[50%] sm:h-[400px] lg:h-[500px] overflow-hidden center px-2 py-3 flex-col gap-2   bg-light rounded-md popularitem">
+
+        <div class="w-[90%] h-[60%] overflow-hidden">
+          <img src="/banner1.jpeg" alt="top pupular item1" clas="h-full w-full">
+        </div>
+
+        <h3 class="text-base font-semibold uppercase md:text-xl">Alcatra porkchop</h3>
+
+        <h3 class="font-semibold text-orange-400">$62.00</h3>
+
+        <button class="w-24 h-10 p-2 text-xs text-white uppercase bg-black rounded-sm center hover:bg-orange-400">Add to
+          Cart</button>
+      </div>
+
+      <!-- popular item 2  -->
+      <div
+        class="w-[90%] h-[350px] sm:w-[50%] sm:h-[400px] lg:h-[500px] overflow-hidden  center px-4 py-3 flex-col gap-2 bg-light rounded-md popularitem">
+
+        <div class="w-[90%] h-[60%] overflow-hidden">
+          <img src="/product4.jpg" alt="top pupular item1" clas="h-full w-full">
+        </div>
+
+        <h3 class="text-base font-semibold uppercase md:text-xl">Alcatra porkchop</h3>
+
+        <h3 class="font-semibold text-orange-400">$50.00</h3>
+
+        <button class="w-24 h-10 p-2 text-xs text-white uppercase bg-black rounded-sm center hover:bg-orange-400">Add to
+          Cart</button>
+
+      </div>
+    </div>
+  </section> 
+
+  <!--------------------------------------- banner part starts here  --------------------------->
+
+  <div class="w-full h-[170px] mob:h-[250px] sm:h-[300px] md:h-[350px] py-4 center flex-col mb-4">
+    <img src="/banner 5.jpg" alt="product banner" class="w-[80%] sm:w-[90%] h-full banner-1">
+    <img src="/BANNER4.png" alt="product banner" class="w-[80%] sm:w-[90%] h-full banner-2 hidden">
+
+  </div>
+
+  <!--------------------------------- best sellers part starts here  -------------------------------->
+
+  <section  class="flex-col w-full h-auto gap-4 px-3 py-8 center">
+
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold uppercase font-[poppins] text-orange-400">bestsellers</h2>
+
+    <p class="text-sm text-center uppercase balance mob:text-base sm:text-lg w-[80%]">Dont forget to check out the Best Selling stuff
+      of our store.
+    </p>
+
+    <!-- drop down menu  -->
+    <select name="dropdown" id="bestsellerdropdown"  class="uppercase w-[70%] h-6  sm:text-lg text-sm md:hidden px-3 text-center text-black">
+
+      <option value="decor" class="text-xs">decor</option>
+      <option value="Kitchen" class="text-xs">kitchen</option>
+      <option value="living" class="text-xs">living room</option>
+      <option value="sofa" class="text-xs">sofa</option>
+    </select>
+
+
+    <!-- best seller options  -->
+    <div class="items-center justify-between hidden w-auto gap-4 px-5 py-3 text-white md:flex">
+
+      <button class="w-32 px-3 py-2 uppercase bg-black rounded-md center hover:bg-orange-400 decoroptn">decor</button>
+
+      <button class="w-32 px-3 py-2 uppercase bg-black rounded-md center hover:bg-orange-400 kitchnoptn">kitchen</button>
+
+      <button class="w-32 px-3 py-2 uppercase bg-black rounded-md center hover:bg-orange-400 livingoptn">living Room</button>
+
+      <button class="w-32 px-3 py-2 uppercase bg-black rounded-md center hover:bg-orange-400 sofaoptn">sofa</button>
+
+    </div>
+
+
+    <!---------- displaying items  ----------->
+
+    <!---------------------------------- decor items  ------------------------->
+          <!-- inner container   -->
+          <div class="w-full h-[100%]  flex items-center justify-center gap-8 font-[poppins]  px-6 py-4 flex-col sm:flex-row md:gap-10"
+          id="decoritemcontainer">
+  
+          <!-- item1 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex flex-col items-center justify-center h-[320px] w-52 sm:w-60 md:w-72">
+              <img src="/table1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">Decor Item1</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+  
+          <!-- item2 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg">
+            <div class="flex flex-col items-center justify-center h-[320px]  w-52 sm:w-64 md:w-72">
+              <img src="/sofa1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">Decor item2</h4>
+              <h3 class="font-semibold text-orange-400">$54.00</h3>
+            </div>
+          </div>
+  
+          <!-- item3 -->
+          <div class="hidden card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex-col items-center justify-center hidden w-52 sm:w-60 md:w-72 lg:flex h-[320px] ">
+              <img src="/chair2.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">Decor item3</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!---------------------------------- kitchen items  ------------------------->
+          <!-- inner container   -->
+          <div class="w-full h-[100%] hidden flex items-center justify-center gap-8 font-[poppins]  px-6 py-4 flex-col sm:flex-row md:gap-10"
+          id="kitchenitemcontainer">
+  
+          <!-- item1 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex flex-col items-center justify-center h-[320px] w-52 sm:w-60 md:w-72">
+              <img src="/table1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">kitchen Item1</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg">
+            <div class="flex flex-col items-center justify-center h-[320px]  w-52 sm:w-64 md:w-72">
+              <img src="/sofa1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">kitchen item2</h4>
+              <h3 class="font-semibold text-orange-400">$54.00</h3>
+            </div>
+          </div>
+
+          <!-- item3 -->
+          <div class="hidden card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex-col items-center justify-center hidden w-52 sm:w-60 md:w-72 lg:flex h-[320px] ">
+              <img src="/chair2.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">kitchen item3</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------------------- living room items  ------------------------->
+          <!-- inner container   -->
+          <div class="w-full h-[100%] hidden flex items-center justify-center gap-8 font-[poppins]  px-6 py-4 flex-col sm:flex-row md:gap-10"
+          id="livingitemcontainer">
+  
+            <!-- item1 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex flex-col items-center justify-center h-[320px] w-52 sm:w-60 md:w-72">
+              <img src="/table1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">living Item1</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+  
+          <!-- item2 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg">
+            <div class="flex flex-col items-center justify-center h-[320px]  w-52 sm:w-64 md:w-72">
+              <img src="/sofa1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">living item2</h4>
+              <h3 class="font-semibold text-orange-400">$54.00</h3>
+            </div>
+          </div>
+  
+          <!-- item3 -->
+          <div class="hidden card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex-col items-center justify-center hidden w-52 sm:w-60 md:w-72 lg:flex h-[320px] ">
+              <img src="/chair2.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">living item3</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+        </div>
+        
+
+        <!---------------------------------- sofa items  ------------------------->
+          <!-- inner container   -->
+          <div class="w-full h-[100%] hidden  flex items-center justify-center gap-8 font-[poppins]  px-6 py-4 flex-col sm:flex-row md:gap-10"
+          id="sofaitemcontainer">
+          <!-- item1 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex flex-col items-center justify-center h-[320px] w-52 sm:w-60 md:w-72">
+              <img src="/table1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">sofa Item1</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+
+          <!-- item2 -->
+          <div class="card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg">
+            <div class="flex flex-col items-center justify-center h-[320px]  w-52 sm:w-64 md:w-72">
+              <img src="/sofa1.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">sofa item2</h4>
+              <h3 class="font-semibold text-orange-400">$54.00</h3>
+            </div>
+          </div>
+
+          <!-- item3 -->
+          <div class="hidden card hover:cursor-pointer hover:shadow-2xl bg-[#f0efef] secondary shadow-lg ">
+            <div class="flex-col items-center justify-center hidden w-52 sm:w-60 md:w-72 lg:flex h-[320px] ">
+              <img src="/chair2.png" alt="new item1" class="h-[75%]">
+              <h4 class="text-base font-semibold uppercase">sofa item3</h4>
+              <h3 class="font-semibold text-orange-400">$50.00</h3>
+            </div>
+          </div>
+        </div>
+
+  </section>
+
+
+
+  <!-- lower banner part starts here  -->
+
+  <section class="w-full h-[400px] bg-[url('/bannernbw.jpg')] bg-cover sm:h-[450px] md:h-[700px] bg-fixed  relative">
+
+    <div class="absolute left-5 top-[20%] tanslate-y-[-50%] bg-light secondary flex items-start justify-center text-left flex-col gap-2 py-5 px-7 md:gap-3 mob:left-8 mob:px-9 md:px-8 md:left-10 md:top-[30%]">
+
+      <h4 class="text-sm font-semibold uppercase mob:text-base sm:text-[20px] md:text-2xl">hello customer!</h4>
+
+      <h2 class="mb-2 text-xl font-bold uppercase sm:text-3xl md:text-5xl md:mb-5">visit our store</h2>
+
+      <p class="text-sm sm:text-lg md:text-xl">Chandigarh University</p>
+
+      <p class="text-sm sm:text-lg md:text-xl">wondermart@domain.in</p>
+
+      <p class="text-sm sm:text-lg md:text-xl">+91 1234567890</p>
+
+      <button class="px-3 py-2 mt-3 text-xs text-white uppercase bg-black rounded-md w-28 center hover:bg-orange-400 decoroptn md:text-base md:w-44 md:py-3 md:mt-5">contact us</button>
+
+    </div>
+
+  </section>
+
+  <!-- our facilities part starts here  -->
+
+  <section class="flex-col w-full h-auto gap-8 px-5 py-16 center md:flex-row">
+
+    <!-- row 1  -->
+    <div class="flex-col gap-8 center md:flex-row">
+
+      <div class="flex-col gap-4 py-3 center">
+        <i class="text-3xl fa-solid fa-rocket"></i>
+        <h2 class="font-bold sm:text-xl">FREE SHIPPING</h2>
+        <p class="text-sm text-center w-[80%] sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam!</p>
+      </div>
+
+      <div class="flex-col gap-4 py-3 center">
+        <i class="text-3xl fa-solid fa-indian-rupee-sign"></i>
+        <h2 class="font-bold sm:text-xl">FREE SHIPPING</h2>
+        <p class="text-sm text-center w-[80%] sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam!</p>
+      </div>
+
+    </div>
+
+    <!-- row 2  -->
+    <div class="flex-col gap-8 center md:flex-row">
+
+      <div class="flex-col gap-4 py-3 center">
+        <i class="text-3xl fa-solid fa-headphones "></i>
+        <h2 class="font-bold sm:text-xl">FREE SHIPPING</h2>
+        <p class="text-sm text-center w-[80%] sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam!</p>
+      </div>
+
+      <div class="flex-col gap-4 py-3 center">
+        <i class="text-3xl fa-solid fa-gift"></i> 
+        <h2 class="font-bold sm:text-xl">FREE SHIPPING</h2>
+        <p class="text-sm text-center w-[80%] sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam!</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- footer part starts  here  -->
+  <footer>
+    
+  </footer>
+
+  
+</body>
+
+</html>
